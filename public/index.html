@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC AI Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>UFC Fight Predictor</h1>
+        <p>Enter two fighters to generate an AI-driven Fav/Dog analysis and win probability.</p>
+        
+        <div class="input-group">
+            <input type="text" id="fighter1" placeholder="e.g., Sean O'Malley">
+            <span>VS</span>
+            <input type="text" id="fighter2" placeholder="e.g., Song Yadong">
+        </div>
+        
+        <button id="predictBtn">Generate Prediction</button>
+
+        <div id="loading" class="hidden">Analyzing stats and calculating odds...</div>
+        
+        <div id="results" class="hidden">
+            <h2 id="matchupTitle"></h2>
+            <div id="oddsContainer" class="odds"></div>
+            
+            <h3>Fav / Dog Breakdown</h3>
+            <ul id="statsList"></ul>
+
+            <h3>Fight Analysis</h3>
+            <p id="analysisText"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
